@@ -32,4 +32,8 @@
     [4, 5, 6]
     [1, 2, 3]
     
+    
+![image](https://user-images.githubusercontent.com/43353543/162666836-5c25e7b2-2483-47d1-84de-f87ffbe4c3cb.png)
+![image](https://user-images.githubusercontent.com/43353543/162666868-9a9b484c-a45c-4536-8423-2172973331cd.png)
+
 
