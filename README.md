@@ -8,23 +8,28 @@
 
 - *When entering the values of each coordinates, an empty coordinate(empty tile) will have a zero(0)*
 
-### Steps to compile and execute this Program
+# Steps to compile and execute this Program
 
-- ABC
-- DEF
+- Ensure the main.py and State.py files are in the same directory
+- Open a CLI in the same folder as the files above
+- Type `python main.py` to run the main file. 
+- Follow the prompts in the CLI
+    - Enter the GOAL state config
+    - Enter the START state config
 
 
-### Sample SSART and Goal configurations that works with my program are as follows
-## START STATE(1, 8, 2, 0, 4, 3, 7, 6, 5)
-[
-    [1, 8, 2]
-    [0, 4, 3]
+# Sample START and GOAL configurations that works with my program:
+### START STATE `(1, 8, 2, 0, 4, 3, 7, 6, 5)`
+
     [7, 6, 5]
-]
+    [0, 4, 3]
+    [1, 8, 2]
 
-## GOAL STATE(1, 2, 3, 4, 5, 6, 7, 8, 0)
-[
-    [1, 2, 3]
-    [4, 5, 6]
+
+### GOAL STATE `(1, 2, 3, 4, 5, 6, 7, 8, 0)`
+
     [7, 8, 0]
-]
+    [4, 5, 6]
+    [1, 2, 3]
+    
+
