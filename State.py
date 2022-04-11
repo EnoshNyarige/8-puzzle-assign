@@ -117,12 +117,27 @@ class State:
     ''' Backtrack from the goal to the direction of parent(s) until we get the root; there will be no parent at this stagee. '''
 
     def solution(self):
-        solution = []
-        solution.append(self.direction)
+        followedDir = []
+        movesMade = []
+        steps = []
+        followedDir.append(self.state)
+        movesMade.append(self.direction)
+        # steps.append(self.state)
         path = self
         while path.parent != None:
             path = path.parent
-            solution.append(path.direction)
-        solution = solution[:-1]
-        solution.reverse()
-        return solution
+            followedDir.append(path.state)
+            movesMade.append(path.direction)
+        followedDir = followedDir[:-1]
+        movesMade = movesMade[:-1]
+        followedDir.reverse()
+        movesMade.reverse()
+        for i in range(0, (self.depth)):
+            steps.append(followedDir[i])
+        arrSteps = []
+        
+        for j in range(0, 9):
+            arrSteps.append(steps[j])
+            print("\nStep ", j, ":\n", arrSteps[j])
+        
+        return (movesMade)
